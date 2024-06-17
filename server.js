@@ -65,6 +65,10 @@ app.post('/getPasswords', async (req, res) => {
     }
 })
 
+app.get('/api/test', (req, res) => {
+    res.status(200).json({ message: 'Test Mode' });
+})
+
 const PORT = process.env.PORT || 8080;
 
 app.listen(PORT, () => {
